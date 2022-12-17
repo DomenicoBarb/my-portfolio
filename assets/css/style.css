@@ -2,7 +2,7 @@
     --textc: rgb(253, 255, 253);
     --alttext:rgb(253, 253, 253);
     --bgcolor:rgb(161, 161, 161);
-    --header: rgb(0, 171, 134);
+    --header: rgb(60, 60, 60);
     --navbar: rgb(33, 121, 143);
     --body: rgb(255, 255, 255);
     --footer: rgb(64, 64, 64);
@@ -36,7 +36,7 @@ html {
 
 /* Positioning Of Header Navigation Text */
 .header div {
-    padding-top: 10px;
+    padding-top: 0px;
     margin-left: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -62,15 +62,16 @@ a {
 
 /* Office Stock Image Attributes */
 .header-img {
-    height: 150px;
+    height: 80px;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .header-img h2 {
+    margin-top: 30px;
     float: right;
     color: var(--textc);
     background-color: var(--footer);
@@ -106,7 +107,7 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--bgcolor);
     color: var(--textc);
-    box-shadow:  5px 5px 5px rgb(53, 53, 53);
+    box-shadow:  5px 0px 5px rgb(53, 53, 53);
     border-radius: 15px;
     
     
