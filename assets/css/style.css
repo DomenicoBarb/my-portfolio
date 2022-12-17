@@ -60,6 +60,22 @@ a {
     text-decoration:underline;
 }
 
+/* Office Stock Image Attributes */
+.header-img {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-img h2 {
+    float: right;
+    color: var(--textc);
+    background-color: var(--footer);
+}
+
 /* Main content BG formatting, colour, font family, padding/margin */
 .main-content {
     margin: 0px;
