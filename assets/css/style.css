@@ -1,0 +1,32 @@
+:root {
+    --textc: rgb(253, 255, 253);
+    --header: rgb(1, 179, 143);
+    --navbar: rgb(33, 121, 143);
+    --body: rgb(184, 197, 125);
+    --footer: rgb(221, 52, 0);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+  }
