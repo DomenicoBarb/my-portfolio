@@ -1,21 +1,65 @@
 :root {
     --textc: rgb(253, 255, 253);
+    --alttext:rgb(253, 253, 253);
+    --bgcolor:rgb(193, 105, 28);
     --header: rgb(1, 179, 143);
     --navbar: rgb(33, 121, 143);
     --body: rgb(184, 197, 125);
     --footer: rgb(221, 52, 0);
-  }
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  html {
+html {
     height: 100%;
-  }
-  
+}
+
+/* Header background colour and text within header colour */
+.header {
+    padding: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--header);
+    color: var(--textc);
+    display: block;
+}
+
+/* Domenico Barberi Header Text Size */
+.header h1 {
+    display: inline-block;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+/* Positioning Of Header Navigation Text */
+.header div {
+    padding-top: 10px;
+    margin-left: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* The list type for the header content */
+.header div ul {
+    list-style-type: none;
+}
+
+/* Header list content positioning */
+.header div ul li {
+    display:inline-block;
+    margin-left: 25px;
+}
+
+/* Header Link Text Colour */
+a {
+    color: var(--alttext);
+    text-decoration:underline;
+}
+
   body {
     min-height: 100%;
     line-height: 1;
