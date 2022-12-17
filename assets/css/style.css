@@ -1,11 +1,11 @@
 :root {
     --textc: rgb(253, 255, 253);
     --alttext:rgb(253, 253, 253);
-    --bgcolor:rgb(193, 105, 28);
-    --header: rgb(1, 179, 143);
+    --bgcolor:rgb(161, 161, 161);
+    --header: rgb(0, 171, 134);
     --navbar: rgb(33, 121, 143);
-    --body: rgb(184, 197, 125);
-    --footer: rgb(221, 52, 0);
+    --body: rgb(255, 255, 255);
+    --footer: rgb(64, 64, 64);
 }
 
 * {
@@ -51,7 +51,7 @@ html {
 /* Header list content positioning */
 .header div ul li {
     display:inline-block;
-    margin-left: 25px;
+    margin-left: 0px;
 }
 
 /* Header Link Text Colour */
@@ -60,17 +60,99 @@ a {
     text-decoration:underline;
 }
 
-  body {
+/* Main content BG formatting, colour, font family, padding/margin */
+.main-content {
+    margin: 0px;
+    padding: 15px;
+    clear: both;
+    float: right;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--body);
+}
+
+/* Main Content Header Text Settings */
+.main-content h2 {
+    font-size: 25px;
+}
+
+/* Main Content Paragraph Formatting */
+.main-content p {
+    float: right;
+}
+
+/* Main Content Panel Formatting */
+.about-me, .work, .contact-me, .resume {
+    margin-bottom: 10px;
+    padding: 35px;
+    height: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--bgcolor);
+    color: var(--textc);
+    box-shadow:  5px 5px 5px rgb(53, 53, 53);
+    border-radius: 15px;
+    
+    
+}
+
+body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+}
+
+/* Footer SubHeader Font Size */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: var(--textc);
+    background-color: var(--footer);
+}
+
+/* Footer Content Font Size */
+.footer h2 {
+    font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
   }
+
+  @media screen and (max-width:405px) {
+    .header h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:364px) {
+    .header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .header h1 {
+        font-size: 25px;
+    }
+}
+
+  @media screen and (max-width:405px) {
+    .header div ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:326px) {
+    .header div ul li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:309px) {
+    .header div ul li {
+        font-size: 10px;
+    }
+}
