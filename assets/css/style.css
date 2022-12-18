@@ -2,7 +2,7 @@
     --textc: rgb(253, 255, 253);
     --alttext:rgb(253, 253, 253);
     --bgcolor:rgb(161, 161, 161);
-    --header: rgb(60, 60, 60);
+    --header: rgb(76, 78, 78);
     --navbar: rgb(33, 121, 143);
     --body: rgb(255, 255, 255);
     --footer: rgb(64, 64, 64);
@@ -18,6 +18,17 @@ html {
     height: 100%;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+  }
+
+/* Domenico Barberi Header Text Size */
+.header h1 {
+    display: inline-block;
+    font-size: 40px;
+    text-decoration: none;
+}
+
 /* Header background colour and text within header colour */
 .header {
     padding: 35px;
@@ -27,18 +38,10 @@ html {
     display: block;
 }
 
-/* Domenico Barberi Header Text Size */
-.header h1 {
-    display: inline-block;
-    font-size: 40px;
-    text-decoration: none;
-}
-
 /* Positioning Of Header Navigation Text */
 .header div {
-    padding-top: 0px;
-    margin-left: 20px;
-    float: right;
+    display: flex;
+    justify-content: end;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -60,7 +63,7 @@ a {
     text-decoration:underline;
 }
 
-/* Office Stock Image Attributes */
+/* Header Image Attributes */
 .header-img {
     height: 80px;
     width: 100%;
@@ -70,11 +73,16 @@ a {
     background-position: center;
 }
 
+/* Header Image Text */
 .header-img h2 {
-    margin-top: 30px;
+    margin: 35px 0px 0px 0px;
+    padding: 5px;
+    font-size: 20px;
     float: right;
     color: var(--textc);
-    background-color: var(--footer);
+    background-color: var(--navbar);
+    height: 30px;
+    width: 180px;
 }
 
 /* Main content BG formatting, colour, font family, padding/margin */
@@ -107,7 +115,8 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--bgcolor);
     color: var(--textc);
-    box-shadow:  5px 0px 5px rgb(53, 53, 53);
+    border-style: groove;
+    box-shadow: 3px 3px 5px rgb(93, 93, 93);
     border-radius: 15px;
     
     
@@ -133,10 +142,6 @@ body {
 .footer h2 {
     font-size: 20px;
 }
-
-h1,h2,h3,h4,h5,h6 {
-    font-size: 100%;
-  }
 
   @media screen and (max-width:405px) {
     .header h1 {
