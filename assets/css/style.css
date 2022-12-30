@@ -3,13 +3,14 @@
   }
 
 :root {
-    --textc: rgb(255, 253, 253);
-    --bgcolor:rgb(151, 94, 1);
     --header: rgb(56, 54, 54);
-    --altcolour: rgb(255, 255, 255);
     --body: rgb(192, 192, 192);
-    --footer: rgb(37, 37, 37);
+    --textc: rgb(255, 253, 253);
     --darktext:rgb(0, 0, 0);
+    --bgcolor:rgb(151, 94, 1);
+    --altcolour: rgb(255, 255, 255);  
+    --footer: rgb(37, 37, 37);
+
 
 }
 
@@ -31,7 +32,8 @@ h1,h2,h3,h4,h5,h6 {
 .header h1 {
     display: inline-block;
     font-size: 40px;
-    text-decoration: none;
+    background-color: var(--footer);
+    padding: 2px 2% 2px 2%;
 }
 
 /* Header background colour and text within header colour */
@@ -54,6 +56,8 @@ h1,h2,h3,h4,h5,h6 {
 /* The list type for the header content */
 .header div ul {
     list-style-type: none;
+    background-color: var(--footer);
+    padding: 2px 1% 4px 1%;
 }
 
 /* Header list content positioning */
@@ -106,8 +110,13 @@ a {
     width: 100%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--body);
+    background-image: linear-gradient(
+    rgb(56, 54, 54) 1%,
+    rgba(255, 255, 255, 0.21) 100%
+    );
+    line-height: 1.5;
 }
+
 
 /* Main Content Header Text Settings */
 .content h2 {
@@ -125,7 +134,6 @@ a {
     padding: 25px;
     height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--darktext);
     border-style: groove;
     box-shadow: 3px 3px 5px rgb(93, 93, 93);
     border-radius: 15px; 
@@ -141,8 +149,8 @@ body {
 .about-me {
     padding: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--header);
-    color: var(--textc);
+    background: var(--altcolour);
+    color: var(--darktext);
     display: block;
 }
 
@@ -162,13 +170,14 @@ body {
 .contact-me {
     padding: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--header);
-    color: var(--textc);
+    background: var(--altcolour);
+    color: var(--darktext);
     display: block;
 }
 
-/* contact text formatting */
-.contact-me ul {
+/* contact text formatting/colour */
+.contact-me li a {
+    color: var(--darktext);
     font-size: 20px;
     justify-content: end;
 }
