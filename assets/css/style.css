@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-  }
-
 :root {
     --header: rgb(56, 54, 54);
     --body: rgb(192, 192, 192);
@@ -32,37 +28,44 @@ h1,h2,h3,h4,h5,h6 {
 .header h1 {
     display: inline-block;
     font-size: 40px;
-    background-color: var(--footer);
     padding: 2px 2% 2px 2%;
 }
 
 /* Header background colour and text within header colour */
 .header {
-    padding: 35px;
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: var(--header);
     color: var(--textc);
-    display: block;
 }
 
 /* Positioning Of Header Navigation Text */
 .header div {
     display: flex;
-    justify-content: end;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px 2% 2px 2%;
     font-size: 20px;
 }
 
 /* The list type for the header content */
 .header div ul {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
     list-style-type: none;
-    background-color: var(--footer);
-    padding: 2px 1% 4px 1%;
+    padding-top: 10px;
 }
 
 /* Header list content positioning */
 .header div ul li {
-    display:inline-block;
+    display: flex;
     margin-left: 0px;
 }
 
@@ -213,38 +216,32 @@ body {
     font-size: 20px;
 }
 
-  @media screen and (max-width:405px) {
-    .header h1 {
-        font-size: 35px;
+  @media screen and (max-width: 710px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }
+    
+      header nav {
+        justify-content: center;
+      }
     }
-}
 
-@media screen and (max-width:364px) {
-    .header h1 {
-        font-size: 30px;
-    }
-}
+    @media screen and (max-width: 375px) {
+        .header h1 {
+            font-size: 30px;
+        }
 
-@media screen and (max-width:321px) {
-    .header h1 {
-        font-size: 25px;
+        .header div ul li{
+            font-size: 15px;
+            justify-content: space-between;
+        }
     }
-}
-
-  @media screen and (max-width:405px) {
-    .header div ul li {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width:326px) {
-    .header div ul li {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:309px) {
-    .header div ul li {
-        font-size: 10px;
-    }
-}
