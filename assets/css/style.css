@@ -1,11 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+
 :root {
-    --textc: rgb(253, 255, 253);
-    --alttext:rgb(253, 253, 253);
-    --bgcolor:rgb(161, 161, 161);
-    --header: rgb(76, 78, 78);
-    --navbar: rgb(33, 121, 143);
-    --body: rgb(255, 255, 255);
-    --footer: rgb(64, 64, 64);
+    --textc: rgb(255, 253, 253);
+    --bgcolor:rgb(151, 94, 1);
+    --header: rgb(56, 54, 54);
+    --altcolour: rgb(255, 255, 255);
+    --body: rgb(192, 192, 192);
+    --footer: rgb(37, 37, 37);
+    --darktext:rgb(0, 0, 0);
+
 }
 
 * {
@@ -57,9 +62,15 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 0px;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* Header Link Text Colour */
 a {
-    color: var(--alttext);
+    color: var(--textc);
     text-decoration:underline;
 }
 
@@ -73,7 +84,7 @@ a {
     background-position: center;
 }
 
-/* Header Image Text */
+/* Header Image Text
 .header-img h2 {
     margin: 35px 0px 0px 0px;
     padding: 5px;
@@ -82,13 +93,14 @@ a {
     color: var(--textc);
     background-color: var(--navbar);
     height: 30px;
-    width: 180px;
+    width: 245px;
 }
+*/
 
 /* Main content BG formatting, colour, font family, padding/margin */
-.main-content {
+.portfolio {
     margin: 0px;
-    padding: 15px;
+    padding: 10px;
     clear: both;
     float: right;
     width: 100%;
@@ -98,34 +110,79 @@ a {
 }
 
 /* Main Content Header Text Settings */
-.main-content h2 {
+.content h2 {
     font-size: 25px;
 }
 
 /* Main Content Paragraph Formatting */
-.main-content p {
+.content p {
     float: right;
 }
 
 /* Main Content Panel Formatting */
 .about-me, .work, .contact-me, .resume {
-    margin-bottom: 10px;
-    padding: 35px;
+    margin-bottom: 5px;
+    padding: 25px;
     height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--bgcolor);
-    color: var(--textc);
+    color: var(--darktext);
     border-style: groove;
     box-shadow: 3px 3px 5px rgb(93, 93, 93);
-    border-radius: 15px;
-    
-    
+    border-radius: 15px; 
 }
 
 body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
+}
+
+/* About me formatting */
+.about-me {
+    padding: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--header);
+    color: var(--textc);
+    display: block;
+}
+
+.about-me p {
+    float: right;
+}
+
+.work{
+    padding: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--altcolour);
+    color: var(--darktext);
+    display: block;
+}
+
+/* Contact formatting */
+.contact-me {
+    padding: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--header);
+    color: var(--textc);
+    display: block;
+}
+
+/* contact text formatting */
+.contact-me ul {
+    font-size: 20px;
+    justify-content: end;
+}
+
+.resume {
+    padding: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--altcolour);
+    color: var(--darktext);
+    display: block;
+}
+
+.resume p {
+    float: right;
 }
 
 /* Footer SubHeader Font Size */
