@@ -158,12 +158,16 @@ body {
     float: right;
 }
 
-.work{
+.work {
     padding: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: var(--altcolour);
     color: var(--darktext);
     display: block;
+}
+
+.work p {
+    float: right;
 }
 
 /* Contact formatting */
