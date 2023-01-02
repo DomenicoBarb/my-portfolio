@@ -3,10 +3,9 @@
     --body: rgb(192, 192, 192);
     --textc: rgb(255, 253, 253);
     --darktext:rgb(0, 0, 0);
-    --bgcolor:rgb(151, 94, 1);
+    --bgcolor:rgb(2, 141, 76);
     --altcolour: rgb(255, 255, 255);  
     --footer: rgb(37, 37, 37);
-
 
 }
 
@@ -36,8 +35,8 @@ h1,h2,h3,h4,h5,h6 {
     padding: 15px 6% 15px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: var(--header);
     color: var(--textc);
@@ -63,18 +62,11 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 10px;
 }
 
-/* Header list content positioning */
-.header div ul li {
-    display: flex;
-    margin-left: 0px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
+/* Hover over header links modifiers */
+.header li:hover {
+    background-color: rgba(0, 200, 80, 0.3);
+  }
+  
 /* Header Link Text Colour */
 a {
     color: var(--textc);
@@ -91,35 +83,31 @@ a {
     background-position: center;
 }
 
-/* Header Image Text
+/* Header Image Text */
 .header-img h2 {
-    margin: 35px 0px 0px 0px;
+    margin: 28px 0px 0px 0px;
     padding: 5px;
     font-size: 20px;
     float: right;
     color: var(--textc);
-    background-color: var(--navbar);
+    background-color: var(--bgcolor);
     height: 30px;
     width: 245px;
 }
-*/
 
 /* Main content BG formatting, colour, font family, padding/margin */
 .portfolio {
-    margin: 0px;
-    padding: 10px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
     clear: both;
     float: right;
     width: 100%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: linear-gradient(
-    rgb(56, 54, 54) 1%,
-    rgba(255, 255, 255, 0.21) 100%
-    );
-    line-height: 1.5;
+    background-color: var(--body);
 }
-
 
 /* Main Content Header Text Settings */
 .content h2 {
@@ -128,11 +116,12 @@ a {
 
 /* Main Content Paragraph Formatting */
 .content p {
-    float: right;
+    max-width: 80%;
+    font-size: 20px;
 }
 
 /* Main Content Panel Formatting */
-.about-me, .work, .contact-me, .resume {
+.main {
     margin-bottom: 5px;
     padding: 25px;
     height: 250px;
@@ -142,64 +131,92 @@ a {
     border-radius: 15px; 
 }
 
+/* Dictates body min height and line height along with font */
 body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
 }
 
-/* About me formatting */
-.about-me {
-    padding: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--altcolour);
-    color: var(--darktext);
-    display: block;
+/* width of main content being displayed on site (about me/projects/resume/contact me) */
+.portfolio {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-me p {
-    float: right;
+/* projects section formatting */
+.content {
+    margin: 25px 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
 }
 
-.work {
-    padding: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--altcolour);
-    color: var(--darktext);
-    display: block;
-}
-
-.work p {
-    float: right;
-}
-
-/* Contact formatting */
-.contact-me {
-    padding: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--altcolour);
-    color: var(--darktext);
-    display: block;
-}
-
-/* contact text formatting/colour */
-.contact-me li a {
+.content li a {
     color: var(--darktext);
     font-size: 20px;
     justify-content: end;
 }
 
-.resume {
-    padding: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--altcolour);
-    color: var(--darktext);
-    display: block;
-}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--footer);
+    color: var(--textc);
+    border: 3px dashed var(--bgcolor);
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 350px;
+    min-width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 3px;
+    background-blend-mode: soft-light;
+    background-size: 100%;
+    transition: all 0.2s;
+    font-size: 15px;
+  }
+  
+  .flex-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .flex-item div {
+    background-color: var(--body); 
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 20px;
+  }
+  
 
-.resume p {
-    float: right;
-}
+/* portfolio project images */
+.ph1 {
+    background-image: url("../img/ph1.jpg");
+  }
+  
+  .ph2 {
+    background-image: url("../img/ph2.jpg");
+  }
+  
+  .ph3 {
+    background-image: url("../img/ph3.jpg");
+  }
+  
+  .ph4 {
+    background-image: url("../img/ph4.jpg");
+  }
 
 /* Footer SubHeader Font Size */
 .footer {
