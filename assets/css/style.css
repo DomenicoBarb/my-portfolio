@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* The list type for the header content */
-.header div ul {
+.header ul {
     width: 350px;
     display: flex;
     flex-direction: row;
@@ -110,17 +110,6 @@ a {
     background-color: var(--body);
 }
 
-/* Main Content Header Text Settings */
-.content h2 {
-    font-size: 25px;
-}
-
-/* Main Content Paragraph Formatting */
-.content p {
-    max-width: 80%;
-    font-size: 20px;
-}
-
 /* Main Content Panel Formatting */
 .main {
     margin-bottom: 5px;
@@ -139,13 +128,6 @@ body {
     font-family: sans-serif;
 }
 
-/* width of main content being displayed on site (about me/projects/resume/contact me) */
-.portfolio {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* projects section formatting */
 .content {
     margin: 25px 0;
@@ -157,10 +139,46 @@ body {
     justify-content: space-between;
 }
 
-.content li a {
+/* Main Content Header Text Settings */
+.content h2 {
+    font-size: 25px;
+}
+
+/* Main Content Paragraph Formatting */
+.content p {
+    max-width: 80%;
+    font-size: 20px;
+}
+
+.content nav li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:stretch;
+    font-size: 20px;
+    max-width: 100%;
+    width: 20em;
+}
+
+.content a {
     color: var(--darktext);
     font-size: 20px;
-    justify-content: end;
+}
+
+#contact-me a {
+    color: rgb(13, 59, 99);
+    font-size: 25px;
+}
+
+#contact-me ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
 }
 
 .flex-container {
