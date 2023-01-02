@@ -3,7 +3,7 @@
     --body: rgb(192, 192, 192);
     --textc: rgb(255, 253, 253);
     --darktext:rgb(0, 0, 0);
-    --bgcolor:rgb(2, 141, 76);
+    --bgcolor:rgb(2, 113, 141);
     --altcolour: rgb(255, 255, 255);  
     --footer: rgb(37, 37, 37);
 
@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block;
     font-size: 40px;
     padding: 2px 2% 2px 2%;
+    background-color: var(--bgcolor);
 }
 
 /* Header background colour and text within header colour */
@@ -64,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Hover over header links modifiers */
 .header li:hover {
-    background-color: rgba(0, 200, 80, 0.3);
+    background-color: rgba(2, 113, 141, 0.8);
   }
   
 /* Header Link Text Colour */
