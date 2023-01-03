@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block;
     font-size: 40px;
     padding: 2px 2% 2px 2%;
+    background-color: var(--bgcolor);
 }
 
 /* Header background colour and text within header colour */
