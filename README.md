@@ -30,6 +30,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Starting from scratch I made the barebones HTML/CSS style sheet. From there I made the reset.css to match the practices we have been taught to this point. I had several revisions with varying layouts, at first non-reactive and without using flexboxes but after further revisions flexbox functionality and reactive functionality has been added.
 
+## Screenshot:
 ![Screenshot](./assets/img/screenshot.png)
 
 # Links:
