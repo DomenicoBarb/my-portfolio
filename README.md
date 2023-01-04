@@ -1,6 +1,6 @@
-## My Portfolio
+# My Portfolio
 
-# Work in progress portfolio for Domenico Barberi
+## WIP portfolio for Domenico Barberi
 
 ## User Story
 
