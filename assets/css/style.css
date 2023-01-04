@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* The list type for the header content */
 .header ul {
-    width: 350px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -283,7 +283,7 @@ a {
         }
         
     .header div {
-        font-size: 25px;
+        font-size: 30px;
         max-width: 80%;
         display: flex;
         flex-wrap: wrap;
@@ -293,19 +293,19 @@ a {
 }
 
 /* Additional header alterations */
-@media screen and (max-width: 382px) {
-    .header h1 {
+@media screen and (max-width 343px) {
+    .header div {
         font-size: 30px;
     }
 }
 
-@media screen and (max-width 359px) {
+@media screen and (max-width: 230px) {
     .header h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
-    .header li {
-        font-size: ;
+    .header div {
+        font-size: 25px;
     }
 }
 
