@@ -26,5 +26,11 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
+## How I completed my assignment:
+
+Starting from scratch I made the barebones HTML/CSS style sheet. From there I made the reset.css to match the practices we have been taught to this point. I had several revisions with varying layouts, at first non-reactive and without using flexboxes but after further revisions flexbox functionality and reactive functionality has been added.
+
+![Screenshot](./assets/img/screenshot.png)
+
 # Links:
 Portfolio: https://domenicobarb.github.io/my-portfolio/
