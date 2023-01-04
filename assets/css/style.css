@@ -293,7 +293,7 @@ a {
 }
 
 /* Additional header alterations */
-@media screen and (max-width 343px) {
+@media screen and (max-width: 345px) {
     .header div {
         font-size: 30px;
     }
