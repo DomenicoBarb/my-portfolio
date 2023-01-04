@@ -14,7 +14,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 html {
     height: 100%;
 }
@@ -46,9 +46,9 @@ h1,h2,h3,h4,h5,h6 {
 /* Positioning Of Header Navigation Text */
 .header div {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 2px 2% 2px 2%;
+    padding: 2px 2% 12px 2%;
     font-size: 20px;
 }
 
@@ -62,6 +62,10 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     list-style-type: none;
     padding-top: 10px;
+}
+
+.header li {
+    flex-wrap: wrap;
 }
 
 /* Hover over header links modifiers */
@@ -143,48 +147,55 @@ a {
     font-size: 20px;
 }
 
+/* Reactive code for contact section content */
 .content nav li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    align-items:stretch;
+    justify-content: space-around;
+    align-items: center;
     font-size: 20px;
     max-width: 100%;
     width: 275px;
 }
 
+/* Font size/colour of section titles */
 .content a {
     color: var(--darktext);
     font-size: 20px;
 }
 
+/* Font size/colour of contact list items */
 #contact-me a {
     color: var(--bgcolor);
     font-size: 21px;
 }
 
+/* Additional Reactive code for contact section content (needed two sections for desired results) */
 #contact-me ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
+/* Contact section hover functionality */
 #contact-me a:hover{
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* Flex container perameters */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-height: 400px;
-  }
+}
   
-  .flex-item {
+/* Flex items perameters (Projects flex parameters) */
+.flex-item {
     display: flex;
     align-items: flex-end;
     background-color: var(--footer);
@@ -199,41 +210,45 @@ a {
     background-size: 100%;
     transition: all 0.2s;
     font-size: 15px;
-  }
-  
-  .flex-item:hover {
+}
+
+/* Flex items hover functionality */
+.flex-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .flex-item div {
+}
+
+/* Projects Header/Subheader background colour */
+.flex-item div {
     background-color: var(--bgcolor); 
     padding: 8px 10px;
-  }
-  
-  .flex-item h3 {
+}
+
+/* Project item headers font size */
+.flex-item h3 {
     font-size: 16px;
-  }
+}
 
-  .flex-item span {
+/* Project items subheader font size */
+.flex-item span {
     font-size: 14px;
-  }
+}
 
-/* portfolio project images */
+/* Portfolio project images Placeholder1 - Placeholder4 */
 .ph1 {
     background-image: url("../img/ph1.jpg");
-  }
+}
   
-  .ph2 {
+.ph2 {
     background-image: url("../img/ph2.jpg");
-  }
+}
   
-  .ph3 {
+.ph3 {
     background-image: url("../img/ph3.jpg");
-  }
+}
   
-  .ph4 {
+.ph4 {
     background-image: url("../img/ph4.jpg");
-  }
+}
 
 /* Footer SubHeader Font Size */
 .footer {
@@ -251,74 +266,101 @@ a {
     font-size: 20px;
 }
 
+/* !Display reactivity code! */
+/* @900px centering MAIN header text along with nav bar text */
 @media screen and (max-width: 900px) {
     .header {
         padding: 0 0 10px 0;
-         justify-content: center;
-            text-align: center;
+        justify-content: center;
+        text-align: center;
         }    
     
-        .header h1 {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
-            }
-            
-        .header-img h2 {
-            margin: 15px 0px 0px 0px;
-            padding: 5px;
-            font-size: 30px;
-            float: right;
-            color: var(--textc);
-            background-color: var(--bgcolor);
-            height: 45px;
-            width: 350px;
+    .header h1 {
+        font-size: 45px;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        }
+        
+    .header div {
+        font-size: 25px;
+        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
         }
 }
 
+/* Additional header alterations */
+@media screen and (max-width: 382px) {
+    .header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width 359px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header li {
+        font-size: ;
+    }
+}
+
+/* Flex item reactivity/sizing */
 @media screen and (max-width: 511px) {
     .flex-item {
-         min-width: 150px;
-           min-height: 100px;
-      }
+        min-width: 150px;
+        min-height: 100px;
+    }
 
-     .flex-item div {
+    .flex-item div {
         padding: 4px 5px;
-      }
+    }
 
     .flex-item h3 {
         font-size: 12px;
     }
 
     .flex-item span {
-         font-size: 10px;
-    }
-}
-    
-@media screen and (max-width: 382px) {
-    .header h1 {
-        font-size: 30px;
-    }
-
-    .header li {
         font-size: 10px;
-        justify-content: space-between;
-       }
+    }
 }
 
- @media screen and (max-width: 365px) {
+@media screen and (max-width: 207px) {
+    .flex-item {
+        min-width: 100px;
+        min-height: 66.6px;
+    }
+
+    .flex-item div {
+        padding: 2px 2.5px;
+    }
+
+    .flex-item h3 {
+        font-size: 10px;
+    }
+
+    .flex-item span {
+        font-size: 8px;
+    }
+}
+
+/* Contact section font changes for smaller screen compatibility */
+@media screen and (max-width: 365px) {
     #contact-me a {
-           font-size: 15px;
-       }
+        font-size: 15px;
+    }
 }
 
- @media screen and (max-width 359px) {
-     .header h1 {
-          font-size: 20px;
-      }
+@media screen and (max-width: 365px) {
+    #contact-me a {
+        font-size: 12px;
+    }
 
-      .header li {
-          font-size: 5px;
-         justify-content: space-around;
-      }
-  }
+    .content nav li {
+        width: 150px;
+    }
+}
