@@ -30,8 +30,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Starting from scratch I made the barebones HTML/CSS style sheet. From there I made the reset.css to match the practices we have been taught to this point. I had several revisions with varying layouts, at first non-reactive and without using flexboxes but after further revisions flexbox functionality and reactive functionality has been added.
 
+## Description:
+
+This is my first portfolio website! Overtime I will be updating and adding content/projects as I learn new concepts.
+
 ## Screenshot:
 ![Screenshot](./assets/img/screenshot.png)
 
-# Links:
+# Link to deployed website:
 Portfolio: https://domenicobarb.github.io/my-portfolio/
