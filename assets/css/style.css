@@ -213,13 +213,21 @@ a {
     border: 3px dashed var(--bgcolor);
     min-width: 200px;
     min-height: 133.3px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 3px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 2px;
     background-blend-mode: soft-light;
     background-size: 100%;
     transition: all 0.2s;
     font-size: 15px;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-width: 200px;
+    max-width: 650px;
+    min-height: 300px;
+    flex-basis: 100%;
 }
 
 /* Flex items hover functionality */
@@ -375,12 +383,44 @@ a {
     }
 }
 
-@media screen and (max-width: 450) {
+@media screen and (max-width: 450px) {
     #portrait {
-        block-size: 100px;
+        block-size: 120px;
     }
 
     .header-img {
-        height: 150px;
+        height: 130px;
+    }
+}
+
+/* flex box config for reactivity */
+@media screen and (max-width: 712px) {
+    .flex-item:first-child {
+        min-width: 350;
+        max-width: 400px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .flex-item:first-child {
+        min-width: 300px;
+        max-width: 320px;
+        min-height: 200px;
+    }
+
+    .flex-item {
+        min-width: 150px;
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    .flex-item:first-child {
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 133.3px;
+        max-height: 133.3px;
     }
 }
