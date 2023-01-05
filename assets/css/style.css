@@ -417,6 +417,15 @@ a {
 }
 
 /* small screen adjustment of main project sizing */
+@media screen and (max-width: 408px) {
+    .flex-item:first-child {
+        min-width: 220px;
+        max-width: 220px;
+        min-height: 146.6px;
+        max-height: 146.6px;
+    }
+}
+
 @media screen and (max-width: 358px) {
     .flex-item:first-child {
         min-width: 200px;
