@@ -222,7 +222,7 @@ a {
     font-size: 15px;
 }
 
-/* feature first portfolio item */
+/* First portfolio project is largest sized */
 .flex-item:first-child {
     min-width: 200px;
     max-width: 650px;
@@ -416,6 +416,7 @@ a {
     }
 }
 
+/* small screen adjustment of main project sizing */
 @media screen and (max-width: 358px) {
     .flex-item:first-child {
         min-width: 200px;
