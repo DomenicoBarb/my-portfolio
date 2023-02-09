@@ -253,20 +253,20 @@ a {
 }
 
 /* Portfolio project images Placeholder1 - Placeholder4 */
-.ph2 {
-    background-image: url("../img/weather.png");
-}
-  
-.ph4 {
-    background-image: url("../img/password.png");
-}
-  
 .ph1 {
     background-image: url("../img/poke.png");
 }
-  
+
+.ph2 {
+    background-image: url("../img/weather.png");
+}
+
 .ph3 {
     background-image: url("../img/work.png");
+}
+
+.ph4 {
+    background-image: url("../img/password.png");
 }
 
 /* Footer SubHeader Font Size */
