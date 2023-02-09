@@ -253,15 +253,15 @@ a {
 }
 
 /* Portfolio project images Placeholder1 - Placeholder4 */
-.ph1 {
+.ph2 {
     background-image: url("../img/password.png");
 }
   
-.ph2 {
+.ph3 {
     background-image: url("../img/website.jpg");
 }
   
-.ph3 {
+.ph1 {
     background-image: url("../img/poke.png");
 }
   
